@@ -36,7 +36,8 @@ test:
     - pip
 
 about:
-  home: https://pypi.org/project/pipda/
+  home: https://github.com/pwwang/pipda
+  doc_url: https://pwwang.github.io/pipda/api/pipda/
   summary: A framework for data piping in python
   license: MIT
   license_file: LICENSE
