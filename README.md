@@ -1,13 +1,15 @@
 About pipda
 ===========
 
-Home: https://pypi.org/project/pipda/
+Home: https://github.com/pwwang/pipda
 
 Package license: MIT
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pipda-feedstock/blob/master/LICENSE.txt)
 
 Summary: A framework for data piping in python
+
+Documentation: https://pwwang.github.io/pipda/api/pipda/
 
 Current build status
 ====================
