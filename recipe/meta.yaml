@@ -1,5 +1,5 @@
 {% set name = "pipda" %}
-{% set version = "0.5.3" %}
+{% set version = "0.5.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pipda-{{ version }}.tar.gz
-  sha256: ec66febc52def21d35f316c046b88984f97f9282c385264542dd186b6187de27
+  sha256: 2825c27ad13600a0d674c8fc12f90aaacf7ebf92273ba3f3460702cb98e678da
 
 build:
   number: 0
