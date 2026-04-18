@@ -18,10 +18,10 @@ build:
 requirements:
   host:
     - pip
-    - poetry >=0.12
+    - hatchling
     - python {{ python_min }}
   run:
-    - executing >=2.0,<3.0
+    - executing >=2.0
     - python >={{ python_min }},<4.0.0
 
 test:
