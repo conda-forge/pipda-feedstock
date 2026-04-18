@@ -1,0 +1,47 @@
+schema_version: 1
+
+context:
+  name: pipda
+  version: "0.13.2"
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pipda-${{ version }}.tar.gz
+  sha256: ab78308f0c40bf5f27dcc1565ce3634855c2dee788b24ff554b6ea1d0cb3df9f
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - pip
+    - hatchling
+    - python ${{ python_min }}.*
+  run:
+    - executing >=2.0
+    - python >=${{ python_min }}
+
+tests:
+  - python:
+      imports:
+        - pipda
+      pip_check: true
+      python_version:
+        - ${{ python_min }}
+        - "*"
+
+about:
+  summary: A framework for data piping in python
+  license: MIT
+  license_file: LICENSE
+  homepage: https://github.com/pwwang/pipda
+  documentation: https://pwwang.github.io/pipda/api/pipda/
+
+extra:
+  recipe-maintainers:
+    - thewchan
