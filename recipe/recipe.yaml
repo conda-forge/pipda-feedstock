@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pipda
-  version: "0.14.0"
+  version: "0.14.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pipda-${{ version }}.tar.gz
-  sha256: 03d2f4e9e9e24ed3976342205d6f64c014918fc26acc0b5d9f496a5192e393eb
+  sha256: d64bc344f48aa2bb5bd7dad21757c586ef6fa16fa0dc4ffb4a6882c302c1365e
 
 build:
   number: 0
